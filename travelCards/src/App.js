@@ -10,6 +10,7 @@ const App = () => {
     settoursData(newTour);
   }
 
+  //if all tours removed 
   if(toursData.length===0)
   {
     return(
@@ -22,8 +23,8 @@ const App = () => {
   }
 
   return(
-    <div>
-      <h1>Plan with Peoush</h1>
+    <div className="container">
+      <h1 className="title">Plan with Peoush</h1>
       <Tours obj={toursData} removeTour={removeTourHandler}></Tours> 
     </div>
   )

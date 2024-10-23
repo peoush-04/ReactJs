@@ -6,7 +6,7 @@ function Card({id,image,info,price,name,removeTour}){
     const [readMore,setreadMore] = useState(false);
     //initially in UI, only first 200 chars are visible then we have a Read more span tag
     // if readmore is true then show full info , else show only first 200 chars 
-    const description = readMore ? info : `${info.substring(0,200)}....`;
+    const description = readMore ? info : `${info.substring(0,200)} ... `;
     
 
     function readMoreHandler(){
@@ -19,14 +19,14 @@ function Card({id,image,info,price,name,removeTour}){
             <img src={image} alt="error" className="image"></img>
             
             <div className="tour-details">
-                <h4 className="tour-price">{price}</h4>
+                <h4 className="tour-price">₹{price}</h4>
                 <h4 className="tour-name">{name}</h4>
             </div>
             
             <div className="description">
                 {description}
-                <span onClick={readMoreHandler}>
-                    {readMore ? "show less" : "read more"}
+                <span className="readMore" onClick={readMoreHandler}>
+                    {readMore ? " show less" : "read more"}
                 </span>
             </div>
 
