@@ -6,7 +6,9 @@ function Tours(props){
             {
                     tours.map((tour)=>{
                         //passing directlt , no need of writing obj={..tour}
-                        return <Card {...tour} removeTour={props.removeTour}></Card>
+                        //good practise to pass "key" whenever working with map 
+                        /* if u dont pass key , then during production u will face error */
+                        return <Card key={tour.id} {...tour} removeTour={props.removeTour}></Card>
                     })
             }
         </div>

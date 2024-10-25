@@ -49,6 +49,13 @@ const data = [
 		image: "https://cdn.thecodehelp.in/Kochi.jpeg",
 		price: "68,595",
 	},
+	{
+		id:8,
+		name:"Kashmir",
+		info : "Kashmir is a port city in the Indian state of Kerala, known for its historic connections to trade and commerce. The city is home to several stunning churches, synagogues, and mosques, as well as a rich culinary tradition that blends Indian, Portuguese, and other influences.",
+		image: "https://cdn.thecodehelp.in/Darjeeling.jpeg",
+		price: "57,525",
+	}
 ];
 
 export default data;

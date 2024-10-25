@@ -25,7 +25,7 @@ body{
 
 .cards-container{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1180px;
@@ -81,6 +81,8 @@ body{
 .btn:hover{
     transform: scale(1.1);
     transition: all 0.4s;
+    background-color: red;
+    color: white;
 }
 
 .refresh{
@@ -101,4 +103,5 @@ body{
 .refresh button{
     padding: 0.5rem;
     border-radius: 10px;
+    cursor: pointer;
 }
