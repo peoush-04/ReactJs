@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* //copy pasted spinner ka css from css loader generator  */
 .spinner {
-    width: 56px;
-    height: 56px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background: conic-gradient(#0000 10%, #22223b);
     -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
